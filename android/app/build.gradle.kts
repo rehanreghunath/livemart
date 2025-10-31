@@ -26,6 +26,12 @@ android {
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
+        manifestPlaceholders.putAll(
+        mapOf(
+            "appAuthRedirectScheme" to "com.googleusercontent.apps.660581371083-porqsril4r2urhv16c8olb4v77f737mc"
+        )
+        )
+
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
